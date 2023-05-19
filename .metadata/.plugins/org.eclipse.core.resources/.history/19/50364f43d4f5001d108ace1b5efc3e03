@@ -1,0 +1,9 @@
+package app;
+
+public class TestaDaoInsere {
+
+	public static void main(String[] args) {
+		Contato
+	}
+
+}

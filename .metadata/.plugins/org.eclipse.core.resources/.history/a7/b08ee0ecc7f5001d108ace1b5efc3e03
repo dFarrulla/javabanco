@@ -1,0 +1,12 @@
+package control;
+
+public class JdbcInsere {
+
+	public static void main(String[] args) {
+		
+		Connection con = ConnectionFactory.
+	
+
+	}
+
+}

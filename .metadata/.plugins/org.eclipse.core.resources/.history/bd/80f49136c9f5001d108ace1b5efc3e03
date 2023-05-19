@@ -1,0 +1,30 @@
+package control;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import bancojava.ConnectionFactory;
+
+public class JdbcInsere {
+
+	public static void main(String[] args) {
+		
+		try {
+			Connection con = ConnectionFactory.getConnection();
+			 PreparedStatement stmt = con.prepareStatement("insert into contatos (nome, email, endereco)) values (?, ?, ?,)");
+			 stmt.setString(1, "Clayton");
+			 stmt.setString(2, "clayton@gmail.com");
+			 
+			
+			
+			
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+		}
+	
+
+	}
+
+}

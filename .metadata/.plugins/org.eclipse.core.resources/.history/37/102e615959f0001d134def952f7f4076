@@ -1,0 +1,8 @@
+package bancojava;
+
+public class ConnectionFactory {
+	getConnection(){
+		
+	}
+
+}

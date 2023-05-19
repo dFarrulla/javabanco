@@ -1,0 +1,13 @@
+package dao;
+
+import java.sql.Connection;
+
+public class ContadoDao {
+	
+	private Connection con;
+	
+	public Contato
+	
+	
+
+}

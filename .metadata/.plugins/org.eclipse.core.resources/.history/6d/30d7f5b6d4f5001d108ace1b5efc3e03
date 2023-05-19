@@ -1,0 +1,16 @@
+package app;
+
+import modelo.Contato;
+
+public class TestaDaoInsere {
+
+	public static void main(String[] args) {
+		Contato contato = new Contato();
+		contato.setNome("Maria");
+		contato.setEmail("maria@gmail.com");
+		contato.setEndereco("Av. Brasil, 1.000");
+		
+		ContatoDao dao = new Contato
+	}
+
+}

@@ -1,0 +1,29 @@
+package app;
+
+import java.sql.SQLException;
+
+import dao.ContatoDao;
+import modelo.Contato;
+
+public class TestaDaoInsere {
+
+	public static void main(String[] args) {
+		Contato contato = new Contato();
+		contato.setNome("Maria");
+		contato.setEmail("maria@gmail.com");
+		contato.setEndereco("Av. Brasil, 1.000");
+		
+		
+		ContatoDao dao;
+		try {
+			dao = new ContatoDao();
+			dao.adiciona(contato);
+			System.out.println("Gravação feita com sucess");
+			ContatoDao dao = new ContatoDao();
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+		}
+	}
+
+}

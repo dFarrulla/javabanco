@@ -1,0 +1,17 @@
+package dao;
+
+import java.sql.Connection;
+
+import bancojava.ConnectionFactory;
+
+public class ContadoDao {
+	
+	private Connection con;
+	
+	public ContatoDao() {
+		this.con = ConnectionFactory.getConnection();
+	}
+	
+	
+
+}

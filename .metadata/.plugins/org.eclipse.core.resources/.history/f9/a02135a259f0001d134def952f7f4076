@@ -1,0 +1,17 @@
+package bancojava;
+
+public class ConnectionFactory {
+	Connection getConnection(){
+		String url ="jdbc:mysql://localhost:3306/test?useTimezone=true&serverTimezone=UTC";
+		String usuario ="root";
+		String senha ="";
+		
+		
+		return
+				
+				
+		
+		
+	}
+
+}

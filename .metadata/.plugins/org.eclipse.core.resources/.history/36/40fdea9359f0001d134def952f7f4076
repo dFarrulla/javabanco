@@ -1,0 +1,10 @@
+package bancojava;
+
+public class ConnectionFactory {
+	Connection getConnection(){
+		return
+		
+		
+	}
+
+}

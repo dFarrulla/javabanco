@@ -1,0 +1,20 @@
+package dao;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import bancojava.ConnectionFactory;
+
+public class ContadoDao {
+	
+	private Connection con;
+	
+	public ContadoDao() throws SQLException {
+		this.con = ConnectionFactory.getConnection();
+	}
+	
+	public void adiciona(contato contato)
+	
+	
+
+}
