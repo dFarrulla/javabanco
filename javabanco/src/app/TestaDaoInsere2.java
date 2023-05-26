@@ -4,9 +4,11 @@ import java.sql.SQLException;
 import java.util.Scanner;
 
 import dao.ContatoDao;
+import dao.FuncionarioDao;
 import modelo.Contato;
+import modelo.Funcionario;
 
-public class TestaDaoInsere {
+public class TestaDaoInsere2 {
 	
 	
 
@@ -17,23 +19,23 @@ public class TestaDaoInsere {
 	        System.out.print("Digite o nome do contato: ");
 	        String nome = scanner.nextLine();
 	        
-	        System.out.print("Digite o e-mail do contato: ");
-	        String email = scanner.nextLine();
+	        System.out.print("Digite usuário: ");
+	        String usuario = scanner.nextLine();
 	        
-	        System.out.print("Digite o endereço do contato: ");
-	        String endereco = scanner.nextLine();
+	        System.out.print("Digite a senha: ");
+	        String senha = scanner.nextLine();
 	        
 	        scanner.close();
 		
-	        Contato contato = new Contato();
-	        contato.setNome(nome);
-	        contato.setEmail(email);
-	        contato.setEndereco(endereco);
+	        Funcionario funcionario = new Funcionario();
+	        funcionario.setNome(nome);
+	        funcionario.setUsuario(usuario);
+	        funcionario.setSenha(senha);
 	        
-	        ContatoDao dao;
+	        FuncionarioDao dao;
 	        try {
-	            dao = new ContatoDao();
-	            dao.adiciona(contato);
+	            dao = new FuncionarioDao();
+	            dao.adiciona(funcionario);
 	            System.out.println("Gravação feita com sucesso");
 	            
 	        } catch (SQLException e) {

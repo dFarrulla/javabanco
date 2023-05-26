@@ -32,6 +32,10 @@ public class Contato {
 	public void setEndereco(String endereco) {
 		this.endereco = endereco;
 	}
+	public void setUsuariol(String usuario) {
+		// TODO Auto-generated method stub
+		
+	}
 	 
 	
 
